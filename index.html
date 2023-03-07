@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:;" />
+    <title>Document</title>
+    <script src="./robot.js"></script>
+    <style>
+      .controller {
+        display: flex;
+        width: 100%;
+      }
+      .controller-group {
+        display: flex;
+        flex-direction: column;
+        margin: auto 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Rotating Square</h1>
+    <canvas id="glcanvas" width="640" height="480"></canvas>
+    <div class="controller">
+      <span class="controller-group">
+        <div>
+          camara X
+          <br />
+          <input
+            type="range"
+            id="camara_x"
+            name="camara_x"
+            min="-5"
+            max="5"
+            step="0.01"
+            value="0"
+          />
+        </div>
+        <div>
+          camara Y
+          <br />
+          <input
+            type="range"
+            id="camara_y"
+            name="camara_y"
+            min="-5"
+            max="5"
+            step="0.01"
+            value="0"
+          />
+        </div>
+        <div>
+          camara Z
+          <br />
+          <input
+            type="range"
+            id="camara_z"
+            name="camara_z"
+            min="-5"
+            max="5"
+            step="0.01"
+            value="0"
+          />
+        </div>
+      </span>
+      <span class="controller-group">
+        <div>
+          Rotation X
+          <br />
+          <input
+            type="range"
+            id="rotation_1x"
+            name="rotation_1x"
+            min="-180"
+            max="180"
+            step="1"
+            value="0"
+          />
+        </div>
+        <div>
+          Rotation Y
+          <br />
+          <input
+            type="range"
+            id="rotation_1y"
+            name="rotation_1y"
+            min="-90"
+            max="90"
+            step="1"
+            value="0"
+          />
+        </div>
+        <div>
+          Rotation Z
+          <br />
+          <input
+            type="range"
+            id="rotation_1z"
+            name="rotation_1z"
+            min="-90"
+            max="90"
+            step="1"
+            value="0"
+          />
+        </div>
+      </span>
+      <span class="controller-group">
+        <div>
+          Rotation X
+          <br />
+          <input
+            type="range"
+            id="rotation_2x"
+            name="rotation_2x"
+            min="-180"
+            max="180"
+            step="1"
+            value="0"
+          />
+        </div>
+        <div>
+          Rotation Y
+          <br />
+          <input
+            type="range"
+            id="rotation_2y"
+            name="rotation_2y"
+            min="-90"
+            max="90"
+            step="1"
+            value="0"
+          />
+        </div>
+        <div>
+          Rotation Z
+          <br />
+          <input
+            type="range"
+            id="rotation_2z"
+            name="rotation_2z"
+            min="-90"
+            max="90"
+            step="1"
+            value="0"
+          />
+        </div>
+      </span>
+      <span class="controller-group">
+        <div>
+          Rotation X
+          <br />
+          <input
+            type="range"
+            id="rotation_3x"
+            name="rotation_3x"
+            min="-180"
+            max="180"
+            step="1"
+            value="0"
+          />
+        </div>
+        <div>
+          Rotation Y
+          <br />
+          <input
+            type="range"
+            id="rotation_3y"
+            name="rotation_3y"
+            min="-90"
+            max="90"
+            step="1"
+            value="0"
+          />
+        </div>
+        <div>
+          Rotation Z
+          <br />
+          <input
+            type="range"
+            id="rotation_3z"
+            name="rotation_3z"
+            min="-90"
+            max="90"
+            step="1"
+            value="0"
+          />
+        </div>
+      </span>
+    </div>
+  </body>
+</html>

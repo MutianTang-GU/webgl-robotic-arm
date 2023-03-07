@@ -1,0 +1,15 @@
+{
+    "scripts": {
+        "build-test": "webpack ./robot.js --mode development && mv dist/main.js dist/robot.js && cp index.html dist/index.html",
+        "build": "webpack ./robot.js --mode production && mv dist/main.js dist/robot.js && cp index.html dist/index.html"
+    },
+    "devDependencies": {
+        "raw-loader": "^4.0.2",
+        "webpack-cli": "^5.0.1",
+        "webpack-glsl-minify": "^1.5.0"
+    },
+    "dependencies": {
+        "gl-matrix": "^3.4.3",
+        "webpack": "^5.75.0"
+    }
+}

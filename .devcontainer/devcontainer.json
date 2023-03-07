@@ -1,0 +1,14 @@
+// For format details, see https://aka.ms/devcontainer.json.
+{
+	"name": "javascript-node",
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:18",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ritwickdey.LiveServer",
+				"esbenp.prettier-vscode",
+				"raczzalan.webgl-glsl-editor"
+			]
+		}
+	}
+}
